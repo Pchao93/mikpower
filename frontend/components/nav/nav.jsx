@@ -15,7 +15,7 @@ class Nav extends React.Component {
           src="public/MikpowerLogo.png">
 
         </img>
-        <ul className="nav-buttos">
+        <ul className="nav-buttons">
           <li>
             <NavLink to="/" activeClassName="active">Home</NavLink>
           </li>
