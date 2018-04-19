@@ -1,0 +1,11 @@
+.footer {
+  width: 100vw;
+  margin-left: -10vw;
+
+  border-top: 1px solid rgb(10 10 114);
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: right;
+  box-sizing: border-box;
+}

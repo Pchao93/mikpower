@@ -1,0 +1,11 @@
+.about {
+  margin-top: 60px;
+  position: relative;
+}
+
+.mission {
+  position: absolute;
+  font-size: 48px;
+  color: #fff;
+  margin: 30px;
+}

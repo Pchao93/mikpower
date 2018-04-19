@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0 10px;
+  justify-content: space-between;
+
+}
+
+.logo {
+  width: 200px;
+  margin-left: 50px;
+}
+.logo img {
+  margin-top: 7px;
+}
+
+.nav-buttons {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-buttons li a {
+  padding: 5px;
+  font-size: 1.55em;
+}
+
+.nav-buttons li a.active {
+  color: #ccc;
+}
