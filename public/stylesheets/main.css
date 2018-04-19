@@ -61,6 +61,11 @@
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.1),0 2px 2px -2px rgba(0,0,0,.02),0 1px 4px 0 rgba(0,0,0,.04);
 }
 
+.about-button:hover {
+
+  background: #1A237E;
+}
+
 /* <div className="main-page-copy">
   If you plan to extend the horizon with your existing general lighting design beyond legacy solutions of switching power supply, our high voltage, low current, and linear constant current driver ICs will provide you with cost-effective, compact, and easy to use solutions. Based on our patented proprietary technologies, our products provide world-class performance in indoor general lighting, especially for applications requiring 30 Watts or below.
   <br></br>

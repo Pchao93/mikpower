@@ -1,0 +1,130 @@
+.contact {
+  margin-top: 60px;
+  display: flex;
+
+
+}
+
+.form-container {
+  width: 40%;
+}
+
+
+.form-image {
+  width: 60%;
+}
+
+.contact-header {
+  font-size: 48px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.contact-subheader {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+width: 100%;
+  font-size: 20px;
+
+}
+
+.inputs input, .inputs textarea {
+  padding: 10px;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.1),0 2px 2px -2px rgba(0,0,0,.02),0 1px 4px 0 rgba(0,0,0,.04);
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+
+
+}
+
+.inputs textarea {
+  height: 400px;
+}
+
+.office-list-container {
+  width: 55%;
+  margin-left: 5%;
+}
+
+.office-list-header {
+  font-size: 48px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.office-list-subheader {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 300;
+
+
+}
+
+.office-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.office-list-item {
+  width: 45%;
+  margin-right: 5%;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.1),0 2px 2px -2px rgba(0,0,0,.1),0 1px 4px 0 rgba(0,0,0,.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.office-stats {
+  padding: 5px;
+}
+
+.office-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.office-address, .office-phone {
+  font-weight: 300;
+
+  font-size: 20px;
+}
+
+.office-address {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  height: 90px;
+  overflow: hidden;
+}
+
+.office-phone {
+  margin-bottom: 10px;
+
+}
+
+.office-image {
+  margin-top
+}
+
+.label {
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+/* <img className="form-image"
+  src="https://media.npr.org/assets/img/2014/02/18/istock_000032773152medium_slide-96511acbe30d79d667719940deb87edbc04928e1-s900-c85.jpg">
+</img> */

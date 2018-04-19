@@ -129,8 +129,14 @@ var About = function (_React$Component) {
           { className: "about-header" },
           "About"
         ),
-        _react2.default.createElement("div", { className: "about-copy" }),
-        _react2.default.createElement("img", { src: "https://recyclenation.com/wp-content/uploads/2015/01/iStock_000032773152Medium.jpg" })
+        _react2.default.createElement(
+          "div",
+          { className: "about-copy" },
+          "MikPower Technologies, Inc. is a comprehensive provider of high-performance and cost effective components for module/solution encompassing analog IC design, especially those related to Solid-State General Lighting. These technologies encompass a complete package covering chips to system level applications with integrated mechanical and electrical solutions that provide superior products and satisfactory services. At MikPower Technologies, Inc., we have built up a technical team and key proprietary technologies covering constant current driver which could take AC power sources such as 100V/110V/220V directly. This enables MikPower Technonogies to develop LED driver IC, modules and system products for general lighting applications. In the coming years, we expect to improve the company revenue substantially, providing robust growth in profit and business opportunity.",
+          _react2.default.createElement("br", null),
+          _react2.default.createElement("br", null),
+          "In seeking new frontiers with proven general lighting technologies beyond current applications, MikPower Technologies has identified the fast growing solid state lighting industry as one of its major focus. The company will rapidly move forward with its capability providing high constant current drivers for residential retro-fit as well as the industrial lighting applications. MikPower Technologies could also provide the custom-made IC with a multi-die packaging technique to serve customers special needs in a case-by-case basis. Products capable of PWM dimming will be ready for smart-lighting control market in a near future."
+        )
       );
     }
   }]);
@@ -178,6 +184,10 @@ var _about = __webpack_require__(/*! ./about/about */ "./frontend/components/abo
 
 var _about2 = _interopRequireDefault(_about);
 
+var _contact = __webpack_require__(/*! ./contact/contact */ "./frontend/components/contact/contact.jsx");
+
+var _contact2 = _interopRequireDefault(_contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (props) {
@@ -190,11 +200,231 @@ exports.default = function (props) {
       null,
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _main2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _contact2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '*', component: null })
     ),
     _react2.default.createElement(_footer2.default, null)
   );
 };
+
+/***/ }),
+
+/***/ "./frontend/components/contact/contact.jsx":
+/*!*************************************************!*\
+  !*** ./frontend/components/contact/contact.jsx ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _office = __webpack_require__(/*! ./office */ "./frontend/components/contact/office.jsx");
+
+var _office2 = _interopRequireDefault(_office);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+  _inherits(Contact, _React$Component);
+
+  function Contact(props) {
+    _classCallCheck(this, Contact);
+
+    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+  }
+
+  _createClass(Contact, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'contact' },
+        _react2.default.createElement(
+          'div',
+          { className: 'form-container' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'contact-header' },
+            'Contact Us'
+          ),
+          _react2.default.createElement(
+            'h2',
+            { className: 'contact-subheader' },
+            'Let us know how we can help you.'
+          ),
+          _react2.default.createElement(
+            'form',
+            { className: 'contact-form',
+              action: 'https://formspree.io/info@mikpowerinc.com',
+              method: 'POST' },
+            _react2.default.createElement(
+              'div',
+              { className: 'inputs' },
+              _react2.default.createElement('input', {
+                className: 'contact-name',
+                placeholder: 'Your Name',
+                type: 'text' }),
+              _react2.default.createElement('input', {
+                className: 'contact-company',
+                placeholder: 'Your Company',
+                type: 'text' }),
+              _react2.default.createElement('input', {
+                className: 'contact-email',
+                placeholder: 'Email Address',
+                type: 'text' }),
+              _react2.default.createElement('textarea', { className: 'contact-message',
+                placeholder: 'Leave your message here...' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'office-list-container' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'office-list-header' },
+            'Our Offices'
+          ),
+          _react2.default.createElement(
+            'h2',
+            { className: 'contact-subheader' },
+            'Lighting the way around the globe.'
+          ),
+          _react2.default.createElement(
+            'ul',
+            { className: 'office-list' },
+            _react2.default.createElement(_office2.default, {
+              name: 'San Jose',
+              address: "800 Charcot Ave., Ste 112 San Jose, CA 95131 United States",
+              phone: '+1-408-493-5903',
+              margin: '-10px',
+              image: 'http://mikpowerinc.com/images/city/sj.jpg'
+            }),
+            _react2.default.createElement(_office2.default, {
+              name: 'Guangzhou',
+              address: "#586-588 PanYu G105 DaShiDuan, Jin Yi Shang Ye DaSha, Rm 419, Guangzhou, China 511430",
+              phone: '+86-20-66251459',
+              margin: '-30px',
+              image: 'http://mikpowerinc.com/images/city/gz.jpg'
+            }),
+            _react2.default.createElement(_office2.default, {
+              name: 'Shenzhen',
+              address: "FL 9, Building B, Seven-Star Commercial Plaza, Mei-Long Road, Shenzhen, China 518131",
+              phone: '+86-755-29555568',
+              margin: '0',
+              image: 'http://mikpowerinc.com/images/city/sz.jpg'
+            }),
+            _react2.default.createElement(_office2.default, {
+              name: 'Hangzhou',
+              address: "Shang-Lin S. Road, FuYang, HangZhou, ZheJiang, China",
+              phone: '+86-130-0365-4319',
+              margin: '-30px',
+              image: 'http://mikpowerinc.com/images/city/hz.jpg'
+            }),
+            _react2.default.createElement(_office2.default, {
+              name: 'Taipei',
+              address: "7F, No. 285, Nanking East Rd., Sect. 3,  Song Shan Dist., Taipei, Taiwan 10550",
+              phone: '+886-2-2546-6080',
+              margin: '-20px',
+              image: 'https://www.singaporeair.com/saar5/images/destination/what-to-do/tpe/taipei-101.jpg'
+            })
+          )
+        )
+      );
+    }
+  }]);
+
+  return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
+
+/***/ }),
+
+/***/ "./frontend/components/contact/office.jsx":
+/*!************************************************!*\
+  !*** ./frontend/components/contact/office.jsx ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Office;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Office(props) {
+  return _react2.default.createElement(
+    "li",
+    { className: "office-list-item" },
+    _react2.default.createElement(
+      "div",
+      { className: "office-stats" },
+      _react2.default.createElement(
+        "div",
+        { className: "office-name" },
+        props.name
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "office-address" },
+        _react2.default.createElement(
+          "span",
+          { className: "label" },
+          "Address: "
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "address" },
+          props.address
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "office-phone" },
+        _react2.default.createElement(
+          "span",
+          { className: "label" },
+          "Phone: "
+        ),
+        props.phone
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "image-container" },
+      _react2.default.createElement("img", {
+        style: { marginTop: props.margin },
+        className: "office-image", src: props.image })
+    )
+  );
+}
 
 /***/ }),
 
@@ -384,40 +614,24 @@ var Nav = function (_React$Component) {
           'ul',
           { className: 'nav-buttons' },
           _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/about', activeClassName: 'active' },
-              'About'
-            )
+            _reactRouterDom.NavLink,
+            { to: '/about', activeClassName: 'active' },
+            'About'
           ),
           _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/circuits', activeClassName: 'active' },
-              'Integrated Circuits'
-            )
+            _reactRouterDom.NavLink,
+            { to: '/circuits', activeClassName: 'active' },
+            'Integrated Circuits'
           ),
           _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/lighting', activeClassName: 'active' },
-              'Lighting Solutions'
-            )
+            _reactRouterDom.NavLink,
+            { to: '/lighting', activeClassName: 'active' },
+            'Lighting Solutions'
           ),
           _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/contact', activeClassName: 'active' },
-              'Contact'
-            )
+            _reactRouterDom.NavLink,
+            { to: '/contact', activeClassName: 'active' },
+            'Contact'
           )
         )
       );

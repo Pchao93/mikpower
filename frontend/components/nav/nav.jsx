@@ -16,18 +16,18 @@ class Nav extends React.Component {
 
         </NavLink>
         <ul className="nav-buttons">
-          <li>
+
             <NavLink to="/about" activeClassName="active">About</NavLink>
-          </li>
-          <li>
+
+
             <NavLink to="/circuits" activeClassName="active">Integrated Circuits</NavLink>
-          </li>
-          <li>
+
+
             <NavLink to="/lighting" activeClassName="active">Lighting Solutions</NavLink>
-          </li>
-          <li>
+
+
             <NavLink to="/contact" activeClassName="active">Contact</NavLink>
-          </li>
+
         </ul>
       </nav>
     );

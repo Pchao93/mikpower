@@ -1,11 +1,43 @@
 .about {
   margin-top: 60px;
-  position: relative;
+
 }
 
-.mission {
-  position: absolute;
+.mission-header {
+
   font-size: 48px;
-  color: #fff;
-  margin: 30px;
+  /* color: rgb(10 10 114); */
+  margin: 30px auto;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.mission-copy {
+  font-size: 36px;
+  /* color: rgb(10 10 114); */
+  margin: 30px auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.about-header {
+  font-size: 48px;
+  /* color: rgb(10 10 114); */
+  margin: 30px auto;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+  font-weight: 400;
+
+}
+
+.about-copy {
+  font-size: 24px;
+  /* color: rgb(10 10 114); */
+  margin: 30px auto;
+  padding: 20px;
+  font-weight: 300;
+
+
 }

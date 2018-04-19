@@ -4,6 +4,7 @@ import Nav from './nav/nav';
 import MainPage from './main/main';
 import Footer from './footer/footer';
 import About from './about/about';
+import Contact from './contact/contact';
 
 export default (props) => (
   <div className='app-container'>
@@ -12,6 +13,7 @@ export default (props) => (
     <Switch>
       <Route exact path="/" component={MainPage}/>
       <Route exact path="/about" component={About}/>
+        <Route exact path="/contact" component={Contact}/>
 
       <Route path="*" component={null}/>
 
