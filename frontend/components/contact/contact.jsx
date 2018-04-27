@@ -44,7 +44,6 @@ class Contact extends React.Component {
         </div>
         <div className="office-list-container">
           <h1 className="office-list-header">Our Offices</h1>
-          <h2 className="contact-subheader">Lighting the way around the globe.</h2>
 
           <ul className="office-list">
             <Office

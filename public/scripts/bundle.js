@@ -188,6 +188,14 @@ var _contact = __webpack_require__(/*! ./contact/contact */ "./frontend/componen
 
 var _contact2 = _interopRequireDefault(_contact);
 
+var _solutions = __webpack_require__(/*! ./solutions/solutions */ "./frontend/components/solutions/solutions.jsx");
+
+var _solutions2 = _interopRequireDefault(_solutions);
+
+var _circuits = __webpack_require__(/*! ./circuits/circuits */ "./frontend/components/circuits/circuits.jsx");
+
+var _circuits2 = _interopRequireDefault(_circuits);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (props) {
@@ -201,11 +209,1030 @@ exports.default = function (props) {
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _main2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _contact2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/lighting', component: _solutions2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/circuits', component: _circuits2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '*', component: null })
     ),
     _react2.default.createElement(_footer2.default, null)
   );
 };
+
+/***/ }),
+
+/***/ "./frontend/components/circuits/36xx.jsx":
+/*!***********************************************!*\
+  !*** ./frontend/components/circuits/36xx.jsx ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Table = function (_React$Component) {
+  _inherits(Table, _React$Component);
+
+  function Table(props) {
+    _classCallCheck(this, Table);
+
+    return _possibleConstructorReturn(this, (Table.__proto__ || Object.getPrototypeOf(Table)).call(this, props));
+  }
+
+  _createClass(Table, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "table",
+        null,
+        _react2.default.createElement(
+          "tbody",
+          null,
+          _react2.default.createElement(
+            "tr",
+            { className: "table-header" },
+            _react2.default.createElement(
+              "td",
+              { rowSpan: "2", width: "10%", align: "center" },
+              "Part Number"
+            ),
+            _react2.default.createElement(
+              "td",
+              { rowSpan: "2", width: "10%", align: "center" },
+              "Max. Voltage"
+            ),
+            _react2.default.createElement(
+              "td",
+              { colSpan: "2", width: "16%", align: "center" },
+              "Current"
+            ),
+            _react2.default.createElement(
+              "td",
+              { colSpan: "5", rowSpan: "1", width: "35%", align: "center" },
+              "Available Package"
+            ),
+            _react2.default.createElement(
+              "td",
+              { rowSpan: "2", width: "10%", align: "center" },
+              "English Datasheet"
+            ),
+            _react2.default.createElement(
+              "td",
+              { rowSpan: "2", width: "8%", align: "center" },
+              "\u4E2D\u6587",
+              _react2.default.createElement("br", null),
+              "\u4EA7\u54C1\u8BF4\u660E"
+            ),
+            _react2.default.createElement(
+              "td",
+              { rowSpan: "2", width: "8%", align: "center" },
+              "Appnote",
+              _react2.default.createElement("br", null),
+              "\u5E94\u7528\u8BF4\u660E"
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            { className: "table-header" },
+            _react2.default.createElement(
+              "td",
+              { width: "6%", align: "center" },
+              "Rating (mA)"
+            ),
+            _react2.default.createElement(
+              "td",
+              { width: "10%", align: "center" },
+              "Operating Mode"
+            ),
+            _react2.default.createElement(
+              "td",
+              { width: "7%", align: "center" },
+              "SOT-89"
+            ),
+            _react2.default.createElement(
+              "td",
+              { width: "8%", align: "center" },
+              "SOT-223"
+            ),
+            _react2.default.createElement(
+              "td",
+              { width: "7%", align: "center" },
+              "TO-252"
+            ),
+            _react2.default.createElement(
+              "td",
+              { width: "7%", align: "center" },
+              "TO-263"
+            ),
+            _react2.default.createElement(
+              "td",
+              { width: "7%", align: "center" },
+              "TO-220"
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK36010"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "10"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36010W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3622"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "20"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3622W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK36025"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "25"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713 "
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36025W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3623"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "30"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3623W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3624"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "40"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3624W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3605"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "50"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3605W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3655"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "55"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3655W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3626"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "60"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3626W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3628"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "80"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3628W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3609"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "90"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3609W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3610"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "100"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Fixed"
+            ),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement("td", null),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK3610W_CN_20131009.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "tr",
+            null,
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "MIK3600"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "200"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "20-40"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "Adjustable"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              "\u2713"
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_EN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/Datasheet_MIK36xxW_CN_20140108.pdf" },
+                "PDF"
+              )
+            ),
+            _react2.default.createElement(
+              "td",
+              { align: "center" },
+              _react2.default.createElement(
+                "a",
+                { href: "http://www.mikpowerinc.com/docs/MIK362X_AN01_V1.3.pdf" },
+                "PDF"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Table;
+}(_react2.default.Component);
+
+exports.default = Table;
+
+/***/ }),
+
+/***/ "./frontend/components/circuits/circuits.jsx":
+/*!***************************************************!*\
+  !*** ./frontend/components/circuits/circuits.jsx ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _xx = __webpack_require__(/*! ./36xx */ "./frontend/components/circuits/36xx.jsx");
+
+var _xx2 = _interopRequireDefault(_xx);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Circuits = function (_React$Component) {
+  _inherits(Circuits, _React$Component);
+
+  function Circuits(props) {
+    _classCallCheck(this, Circuits);
+
+    return _possibleConstructorReturn(this, (Circuits.__proto__ || Object.getPrototypeOf(Circuits)).call(this, props));
+  }
+
+  _createClass(Circuits, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'circuits' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'product-name' },
+          'MIK36XX Series'
+        ),
+        _react2.default.createElement(
+          'h2',
+          { className: 'table-section-header' },
+          'Product Information'
+        ),
+        _react2.default.createElement(_xx2.default, null)
+      );
+    }
+  }]);
+
+  return Circuits;
+}(_react2.default.Component);
+
+exports.default = Circuits;
 
 /***/ }),
 
@@ -301,11 +1328,6 @@ var Contact = function (_React$Component) {
             'h1',
             { className: 'office-list-header' },
             'Our Offices'
-          ),
-          _react2.default.createElement(
-            'h2',
-            { className: 'contact-subheader' },
-            'Lighting the way around the globe.'
           ),
           _react2.default.createElement(
             'ul',
@@ -679,6 +1701,177 @@ exports.default = function (_ref) {
         _react2.default.createElement(_app2.default, null)
     );
 };
+
+/***/ }),
+
+/***/ "./frontend/components/solutions/product.jsx":
+/*!***************************************************!*\
+  !*** ./frontend/components/solutions/product.jsx ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Product;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Product(props) {
+  var details = props.details.map(function (el, index) {
+    return _react2.default.createElement(
+      "li",
+      {
+        key: index,
+        className: "detail" },
+      el
+    );
+  });
+  return _react2.default.createElement(
+    "li",
+    { className: "product-list-item" },
+    _react2.default.createElement(
+      "div",
+      { className: "product-image-container" },
+      _react2.default.createElement("img", {
+
+        className: "product-image", src: props.image })
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "product-info" },
+      _react2.default.createElement(
+        "h1",
+        { className: "product-name" },
+        props.name
+      ),
+      _react2.default.createElement(
+        "ul",
+        { className: "product-details" },
+        details
+      )
+    )
+  );
+}
+
+/***/ }),
+
+/***/ "./frontend/components/solutions/solutions.jsx":
+/*!*****************************************************!*\
+  !*** ./frontend/components/solutions/solutions.jsx ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _product = __webpack_require__(/*! ./product */ "./frontend/components/solutions/product.jsx");
+
+var _product2 = _interopRequireDefault(_product);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Solutions = function (_React$Component) {
+  _inherits(Solutions, _React$Component);
+
+  function Solutions(props) {
+    _classCallCheck(this, Solutions);
+
+    return _possibleConstructorReturn(this, (Solutions.__proto__ || Object.getPrototypeOf(Solutions)).call(this, props));
+  }
+
+  _createClass(Solutions, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "solutions" },
+        _react2.default.createElement(
+          "h1",
+          { className: "solutions-header" },
+          "Lighting Solutions"
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "product-line-description" },
+          "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers."
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "product-list-container" },
+          _react2.default.createElement(
+            "h1",
+            { className: "product-list-header" },
+            "Our Products"
+          ),
+          _react2.default.createElement(
+            "ul",
+            { className: "product-list" },
+            _react2.default.createElement(_product2.default, {
+              image: "http://mikpowerinc.com/images/product/E27-1.jpg",
+              name: "5W E27 Light Bulb",
+              details: "Daylight / 4500K CCT- AC220V / 50 Hz- 400 lm- CRI > 70- E27 Medium Base".split("- ")
+            }),
+            _react2.default.createElement(_product2.default, {
+              image: "http://mikpowerinc.com/images/product/T8.jpg",
+              name: "18W T8 Light Tube",
+              details: "Cool White / 6000K CCT- AC220V / 50 Hz- 168 pcs PLCC3014- 1,500 lm- CRI > 70- Beam angle 130°- 4 ft length".split("- ")
+            }),
+            _react2.default.createElement(_product2.default, {
+              image: "http://mikpowerinc.com/images/product/T5.jpg",
+              name: "10W T5 Light Tube",
+              details: "Cool White / 6000K CCT- AC120V / 60 Hz- 84 pcs PLCC3014- 800 lm- CRI > 70- Beam angle 130°- 2 ft length- Cascade connection possible".split("- ")
+            }),
+            _react2.default.createElement(_product2.default, {
+              image: "http://mikpowerinc.com/images/product/3-square-small.jpg",
+              name: "30W Square Light",
+              details: "Daylight White / 4500K CCT- AC120V / 60 Hz- 252 pcs PLCC3014- 2,200 lm- CRI > 80- Beam angle 140°- 60 cm x 60 cm- 2.5 Kg".split("- ")
+            }),
+            _react2.default.createElement(_product2.default, {
+              image: "http://mikpowerinc.com/images/product/LED_Filament2_225x225.jpg",
+              name: "3W Filament Bulb",
+              details: "Warm White / 3000K CCT- AC120V / 60 Hz- 4 LED filament strings- 290 lm- CRI > 83- PF 0.53- 360° beam angle - E27 screw base".split("- ")
+            }),
+            _react2.default.createElement(_product2.default, {
+              image: "http://mikpowerinc.com/images/product/COB_4_225x225.jpg",
+              name: "COB Modules",
+              details: "3000K or 4500K CCT- AC230V / 50 Hz- Direct AC line input- 5 / 8 / 10 / 12 / 20 W- Efficacy > 100 lm/W- CRI > 80- PF > 0.90- Hi-pot test > 4000V".split("- ")
+            })
+          )
+        )
+      );
+    }
+  }]);
+
+  return Solutions;
+}(_react2.default.Component);
+
+exports.default = Solutions;
 
 /***/ }),
 
