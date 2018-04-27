@@ -6,7 +6,9 @@ import Footer from './footer/footer';
 import About from './about/about';
 import Contact from './contact/contact';
 import Solutions from './solutions/solutions';
-import Circuits from './circuits/circuits';
+import CircuitShow from './circuits/circuit-show';
+import CircuitIndex from './circuits/circuit-index';
+
 
 export default (props) => (
   <div className='app-container'>
@@ -17,7 +19,9 @@ export default (props) => (
       <Route exact path="/about" component={About}/>
       <Route exact path="/contact" component={Contact}/>
       <Route exact path="/lighting" component={Solutions}/>
-      <Route exact path="/circuits" component={Circuits}/>
+      <Route exact path="/circuits" component={CircuitIndex}/>
+
+      <Route exact path="/circuits/:id" component={CircuitShow}/>
 
       <Route path="*" component={null}/>
 

@@ -192,9 +192,13 @@ var _solutions = __webpack_require__(/*! ./solutions/solutions */ "./frontend/co
 
 var _solutions2 = _interopRequireDefault(_solutions);
 
-var _circuits = __webpack_require__(/*! ./circuits/circuits */ "./frontend/components/circuits/circuits.jsx");
+var _circuitShow = __webpack_require__(/*! ./circuits/circuit-show */ "./frontend/components/circuits/circuit-show.jsx");
 
-var _circuits2 = _interopRequireDefault(_circuits);
+var _circuitShow2 = _interopRequireDefault(_circuitShow);
+
+var _circuitIndex = __webpack_require__(/*! ./circuits/circuit-index */ "./frontend/components/circuits/circuit-index.jsx");
+
+var _circuitIndex2 = _interopRequireDefault(_circuitIndex);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -210,7 +214,8 @@ exports.default = function (props) {
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _contact2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/lighting', component: _solutions2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/circuits', component: _circuits2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/circuits', component: _circuitIndex2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/circuits/:id', component: _circuitShow2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '*', component: null })
     ),
     _react2.default.createElement(_footer2.default, null)
@@ -1167,10 +1172,72 @@ exports.default = Table;
 
 /***/ }),
 
-/***/ "./frontend/components/circuits/circuits.jsx":
-/*!***************************************************!*\
-  !*** ./frontend/components/circuits/circuits.jsx ***!
-  \***************************************************/
+/***/ "./frontend/components/circuits/circuit-index.jsx":
+/*!********************************************************!*\
+  !*** ./frontend/components/circuits/circuit-index.jsx ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CircuitIndex = function (_React$Component) {
+  _inherits(CircuitIndex, _React$Component);
+
+  function CircuitIndex(props) {
+    _classCallCheck(this, CircuitIndex);
+
+    return _possibleConstructorReturn(this, (CircuitIndex.__proto__ || Object.getPrototypeOf(CircuitIndex)).call(this, props));
+  }
+
+  _createClass(CircuitIndex, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "circuits" },
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Integrated Circuits"
+        ),
+        _react2.default.createElement("div", null),
+        "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers. At MikPower Technologies Inc., not only do we promote technology innovations, we excel in product performance enhancements and cost reduction, resulting in higher competitiveness and profitability for our customers.",
+        _react2.default.createElement("ul", null)
+      );
+    }
+  }]);
+
+  return CircuitIndex;
+}(_react2.default.Component);
+
+exports.default = CircuitIndex;
+
+/***/ }),
+
+/***/ "./frontend/components/circuits/circuit-show.jsx":
+/*!*******************************************************!*\
+  !*** ./frontend/components/circuits/circuit-show.jsx ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1199,25 +1266,31 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Circuits = function (_React$Component) {
-  _inherits(Circuits, _React$Component);
+var CircuitShow = function (_React$Component) {
+  _inherits(CircuitShow, _React$Component);
 
-  function Circuits(props) {
-    _classCallCheck(this, Circuits);
+  function CircuitShow(props) {
+    _classCallCheck(this, CircuitShow);
 
-    return _possibleConstructorReturn(this, (Circuits.__proto__ || Object.getPrototypeOf(Circuits)).call(this, props));
+    return _possibleConstructorReturn(this, (CircuitShow.__proto__ || Object.getPrototypeOf(CircuitShow)).call(this, props));
   }
 
-  _createClass(Circuits, [{
+  _createClass(CircuitShow, [{
     key: 'render',
     value: function render() {
+      console.log(this.props.match.params.id);
       return _react2.default.createElement(
         'div',
         { className: 'circuits' },
         _react2.default.createElement(
           'h1',
-          { className: 'product-name' },
-          'MIK36XX Series'
+          { className: 'circuit-name' },
+          'MIK36XX Series - Linear LED Driver IC'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'circuit-description' },
+          "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers. At MikPower Technologies Inc., not only do we promote technology innovations, we excel in product performance enhancements and cost reduction, resulting in higher competitiveness and profitability for our customers."
         ),
         _react2.default.createElement(
           'h2',
@@ -1229,10 +1302,10 @@ var Circuits = function (_React$Component) {
     }
   }]);
 
-  return Circuits;
+  return CircuitShow;
 }(_react2.default.Component);
 
-exports.default = Circuits;
+exports.default = CircuitShow;
 
 /***/ }),
 
