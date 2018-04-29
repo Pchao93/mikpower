@@ -1192,6 +1192,8 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1210,19 +1212,35 @@ var CircuitIndex = function (_React$Component) {
   }
 
   _createClass(CircuitIndex, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
-        { className: "circuits" },
+        'div',
+        { className: 'circuits' },
         _react2.default.createElement(
-          "h1",
-          null,
-          "Integrated Circuits"
+          'h1',
+          { className: 'circuits-header' },
+          'Integrated Circuits'
         ),
-        _react2.default.createElement("div", null),
-        "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers. At MikPower Technologies Inc., not only do we promote technology innovations, we excel in product performance enhancements and cost reduction, resulting in higher competitiveness and profitability for our customers.",
-        _react2.default.createElement("ul", null)
+        _react2.default.createElement(
+          'div',
+          { className: 'circuits-description' },
+          "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers."
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'h1',
+            { className: 'product-list-header' },
+            'Our Products'
+          ),
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { className: 'product-list-item', to: '/circuits/1' },
+            'Test Link'
+          )
+        )
       );
     }
   }]);
@@ -1290,7 +1308,7 @@ var CircuitShow = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'circuit-description' },
-          "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers. At MikPower Technologies Inc., not only do we promote technology innovations, we excel in product performance enhancements and cost reduction, resulting in higher competitiveness and profitability for our customers."
+          "MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers."
         ),
         _react2.default.createElement(
           'h2',
@@ -1809,8 +1827,8 @@ function Product(props) {
     );
   });
   return _react2.default.createElement(
-    "li",
-    { className: "product-list-item" },
+    "a",
+    { href: "http://google.com", className: "product-list-item" },
     _react2.default.createElement(
       "div",
       { className: "product-image-container" },

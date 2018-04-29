@@ -11,7 +11,7 @@ export default function Product(props) {
     );
   });
   return (
-    <li className="product-list-item">
+    <a href="http://google.com" className="product-list-item">
       <div className="product-image-container">
         <img
 
@@ -25,6 +25,6 @@ export default function Product(props) {
 
       </div>
 
-    </li>
+    </a>
   );
 }

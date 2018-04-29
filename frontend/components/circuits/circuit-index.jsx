@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class CircuitIndex extends React.Component {
   constructor(props) {
@@ -8,13 +9,14 @@ class CircuitIndex extends React.Component {
   render() {
     return (
       <div className="circuits">
-        <h1>Integrated Circuits</h1>
-        <div>
-
+        <h1 className="circuits-header">Integrated Circuits</h1>
+        <div className="circuits-description">
+          {"MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers."}
         </div>
-          {"MikPower Technologies' core competency lies in developing power IC products and providing total solutions for LED lighting applications. We offer a number of LED driver IC products, LED luminaire modules and light products to a wide range of customers. At MikPower Technologies Inc., not only do we promote technology innovations, we excel in product performance enhancements and cost reduction, resulting in higher competitiveness and profitability for our customers."}
-        <ul>
 
+        <ul>
+          <h1 className="product-list-header">Our Products</h1>
+          <Link className="product-list-item" to="/circuits/1">Test Link</Link>
         </ul>
 
 

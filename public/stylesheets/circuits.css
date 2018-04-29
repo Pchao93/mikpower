@@ -3,6 +3,22 @@
   padding-top: 30px;
 }
 
+.circuits-header {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+
+
+.circuits-description {
+  font-size: 24px;
+  font-weight: 300;
+
+  width: 50%;
+
+}
+
 .circuit-name {
   font-size: 48px;
   font-weight: 400;
@@ -21,4 +37,5 @@
   font-size: 24px;
   margin-bottom: 60px;
   font-weight: 300;
+  width: 50%
 }
