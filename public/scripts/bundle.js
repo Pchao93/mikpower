@@ -1936,7 +1936,7 @@ var Solutions = function (_React$Component) {
             _react2.default.createElement(_product2.default, {
               image: "http://mikpowerinc.com/images/product/T5.jpg",
               name: "10W T5 Light Tube",
-              details: "Cool White / 6000K CCT- AC120V / 60 Hz- 84 pcs PLCC3014- 800 lm- CRI > 70- Beam angle 130°- 2 ft length- Cascade connection possible".split("- ")
+              details: "Cool White / 6000K CCT- AC120V / 60 Hz- 84 pcs PLCC3014- 800 lm- CRI > 70- Beam angle 130°- 2 ft length".split("- ")
             }),
             _react2.default.createElement(_product2.default, {
               image: "http://mikpowerinc.com/images/product/3-square-small.jpg",
