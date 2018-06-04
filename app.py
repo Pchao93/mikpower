@@ -1,21 +1,16 @@
 from flask import Flask, render_template
 from flask import jsonify
+from pymongo import MongoClient
 import urllib.request
 import requests
 import json
 import os
-from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
 
-
-
+client = MongoClient()
+db = client.MikPower
+collection = db.MikPower
 
 app = Flask(__name__)
-mongo = PyMongo(app)
-
-MONGODB_URI = "mongodb://localhost/"
-MONGO_DBNAME = "app"
-
 # app.debug = True
 @app.route('/')
 def render_index():
