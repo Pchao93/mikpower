@@ -4,7 +4,7 @@ module.exports = {
   context: __dirname,
   entry: "./frontend/mikpower.jsx",
   output: {
-    path: path.resolve(__dirname, 'public', 'scripts'),
+    path: path.resolve(__dirname, 'static'),
     filename: "bundle.js"
   },
   module: {

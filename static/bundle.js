@@ -1721,7 +1721,7 @@ var Nav = function (_React$Component) {
           _reactRouterDom.NavLink,
           { exact: true, to: '/', activeClassName: 'active',
             className: 'logo' },
-          _react2.default.createElement('img', { src: 'public/MikpowerLogo4.png' })
+          _react2.default.createElement('img', { src: 'https://i.imgur.com/NO4rEmO.png' })
         ),
         _react2.default.createElement(
           'ul',

@@ -12,7 +12,7 @@ class Nav extends React.Component {
       <nav className="nav">
         <NavLink exact to="/" activeClassName="active"
           className="logo">
-          <img src="public/MikpowerLogo4.png"></img>
+          <img src="https://i.imgur.com/NO4rEmO.png"></img>
 
         </NavLink>
         <ul className="nav-buttons">
